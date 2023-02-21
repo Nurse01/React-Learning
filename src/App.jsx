@@ -3,6 +3,7 @@ import React from 'react';
 import './App.css';
 import Cat from './Cat'
 import HelloClass from './HelloClass'
+import Clock from './Clock'
 
 let i = 2;
 // In-line CSS
@@ -25,6 +26,9 @@ function App() {
       <Cat message="Yoda is the cutest boy in the world."/>
       <Hello/>
       <HelloClass msg="Hello world"/>
+      {/* State& LifeCycle */}
+      <Clock/>
+  
     </div>
   );
 }

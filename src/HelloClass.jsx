@@ -7,6 +7,7 @@ class HelloClass extends React.Component {
     this.state = {
       counter: 0
     }
+    
   }
   handleClick() {
     this.setState(function (prevState) {
