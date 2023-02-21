@@ -6,6 +6,9 @@ import HelloClass from './HelloClass'
 import Clock from './Clock'
 import Click from './Click'
 import EventBind from './EventBind'
+import Greeting from './Greeting'
+import LoginControl from './LoginControl'
+import Mailbox from './MailBox'
 
 let i = 2;
 // In-line CSS
@@ -14,6 +17,7 @@ let myCSS = {
   color: '#7c4ba0'
 }
 function App() {
+  const messages = ['msg1', 'msg2', 'msg3'];
   return (
     <div className="App" >
       {/* Basic */}
@@ -34,6 +38,10 @@ function App() {
       <Click />
       {/* Binding Event Handler */}
       <EventBind />
+      {/* Conditional Rendering */}
+      <Greeting isLoggedIn={false} />
+      <LoginControl />
+      <Mailbox unreadMessages={messages}/>
     </div>
   );
 }
