@@ -4,6 +4,8 @@ import './App.css';
 import Cat from './Cat'
 import HelloClass from './HelloClass'
 import Clock from './Clock'
+import Click from './Click'
+import EventBind from './EventBind'
 
 let i = 2;
 // In-line CSS
@@ -22,13 +24,16 @@ function App() {
       <p>{i === 2 ? "i equal 2" : "i not equal 2"}</p>
       {/* Component, Props(send data/func among component), State(collect data) */}
       <Header />
-      <Content/>
-      <Cat message="Yoda is the cutest boy in the world."/>
-      <Hello/>
-      <HelloClass msg="Hello world"/>
+      <Content />
+      <Cat message="Yoda is the cutest boy in the world." />
+      <Hello />
+      <HelloClass msg="Hello world" />
       {/* State& LifeCycle */}
-      <Clock/>
-  
+      <Clock />
+      {/* Handling Event */}
+      <Click />
+      {/* Binding Event Handler */}
+      <EventBind />
     </div>
   );
 }
@@ -46,9 +51,9 @@ function Content() {
     </div>
   )
 }
-class Hello extends React.Component{
-  render(){
-    return(
+class Hello extends React.Component {
+  render() {
+    return (
       <div>
         <p>This text is from the Hello class.</p>
       </div>
