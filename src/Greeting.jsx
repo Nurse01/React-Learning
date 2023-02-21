@@ -17,10 +17,9 @@ import React from "react";
 // 2rd way
 function Greeting(props) {
   const isLoggedIn = props.isLoggedIn;
-  let msg;
   if (isLoggedIn) {
-    return msg = <h1>Welcome back!</h1>;
+    return <h1>Welcome back!</h1>;
   }
-  return msg = <h1>Please sign up.</h1>;
+  return <h1>Please sign up.</h1>;
 }
 export default Greeting;

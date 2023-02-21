@@ -9,6 +9,7 @@ import EventBind from './EventBind'
 import Greeting from './Greeting'
 import LoginControl from './LoginControl'
 import Mailbox from './MailBox'
+import NameList from './NameList'
 
 let i = 2;
 // In-line CSS
@@ -42,6 +43,8 @@ function App() {
       <Greeting isLoggedIn={false} />
       <LoginControl />
       <Mailbox unreadMessages={messages}/>
+      {/* Lists& Keys */}
+      <NameList />
     </div>
   );
 }
